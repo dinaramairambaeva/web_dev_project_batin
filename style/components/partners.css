@@ -1,0 +1,11 @@
+.partners{
+    display: flex;
+    padding: 90px 7%;
+    background-color: #f1f8ff;
+    justify-content: space-between;
+}
+
+.partners img{
+    margin: 5px;
+    display: block;
+}

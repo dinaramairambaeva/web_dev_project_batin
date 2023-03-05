@@ -1,0 +1,128 @@
+.header-menu{
+    display: flex;
+    padding: 25px 8%;
+}
+
+.header-menu-right{
+    display: flex;
+    margin-left: auto; 
+    margin-right: 0;
+    align-items: center;
+}
+
+.header-menu-right a{
+    margin: 0 10px;
+    padding: 9px;
+    font-size: 17px;
+    color: #fff;
+    transition: .5s;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+}
+
+.header-menu-right a:not(#home-list a):hover{
+    color: #ff8901;
+}
+
+.header-menu-right a:last-child:hover{
+    color: #fff;
+}
+#home-menu{
+    position: relative;
+}
+#home-list{
+    position: absolute;
+    padding: 10px;
+    top: 30px;
+    left: 10px;
+    width: 170px;
+    background-color: #31303E;
+    border-radius: 3px;
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+}
+#home-list a{
+    padding-bottom: 10px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#home-list a:hover{
+    transform: translateX(5px);
+}
+
+#burger-menu{
+    position: relative;
+    display: none;
+}
+#burger-menu-icon{
+    color: #fff;
+    font-size: 25px;
+    z-index: 4;
+    position: relative;
+}
+
+#burger-menu-list{
+    position: absolute;
+    right: 13%;
+    display: none;
+    flex-direction: column;
+    background-color: #31303E;
+    z-index: 3;
+    border-radius: 3px;
+    width: 150px;
+    transition: .4s;
+}
+#burger-menu-list a{
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: .4s;
+}
+#burger-menu-list a:not(a:last-child()):hover{
+    color: #ff8901;
+}
+@media(max-width: 1200px){
+    .header-button{
+        display: none;
+    }
+}
+
+@media(max-width: 1000px){
+    .header-menu{
+        margin: 1% 5%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-menu-right{
+        display: none;
+    }
+    #burger-menu{
+        display: block;
+    }
+}
+
+
+@media(max-width: 460px){
+    #burger-menu-list{
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: none;
+        padding: 50px 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #burger-menu-list a{
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #343342;
+    }
+  
+}

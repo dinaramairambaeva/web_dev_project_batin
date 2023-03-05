@@ -1,0 +1,113 @@
+.team-members{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 90px 7%;
+}
+
+.team-members h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.3;
+    color: #31303E;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+}
+
+.team-members p{
+    font-size: 14px;
+    color: #8b8f92;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    margin: 15px;
+    max-width: 640px;
+}
+
+.team-members-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.team-member-items{
+    width: 33.33333333%;
+    padding: 50px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.team-member-items h3{
+    font-size: 20px;
+    color: #31303E;
+    line-height: 32px;
+    margin: 10px 25px;
+    font-weight: bold;
+}
+
+.team-member-items img{
+    width: 100%;
+    height: auto;
+    border-radius: 200px/50px;
+    border: 5px solid #ff8901;
+}
+
+.team-member-items p{
+    width: 90%;
+}
+
+.team-member-icon-holder{
+    padding: 0 75px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    top: 35%;
+    opacity: 0;
+    transition: .4s;
+}
+
+.team-member-items:hover .team-member-icon-holder{
+    padding: 0 25px;
+    opacity: 1;
+}
+
+
+.team-member-icons i{
+    color:#ff8901;
+    background-color: #fff;
+    border: 3px solid #ff8901;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+    line-height: 47px;
+}
+
+@media(max-width: 1000px){
+    .team-members{
+        padding: 60px 7%;
+    }
+    .team-members-list{
+        flex-wrap: wrap;
+    }
+    .team-member-items{
+        width: calc(50% - 13.33px);
+    }
+}
+
+@media(max-width: 700px){
+    .team-members-list{
+        justify-content: center;
+        align-items: center;
+    }
+    .team-member-items{
+        width: 80%;
+    }
+}

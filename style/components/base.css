@@ -1,0 +1,26 @@
+.yellow-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ff8901;
+    width: fit-content;
+}
+
+.yellow-button a{
+    margin: 5px 10px;
+    padding: 5px;
+    font-size: 16px;
+    color: #fff;
+    transition: .5s;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+}
+.yellow-button a:hover{
+    background-color: #ff8901;
+    color: #fff
+}
+
+/* 
+body{
+    height:10000px;
+} */
